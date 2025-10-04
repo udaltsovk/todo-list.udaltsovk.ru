@@ -4,13 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
-  <script src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script src="src/main.js" defer></script>
   <title>TODO-list</title>
 </head>
 
 <body>
-  Hello, world!
+  <div class="container">
+    <main class="content">
+      <h1 class="title">A simple TODO List</h1>
+      <form action="" class="task-create-form">
+        <div class="task-create-form__input-wrapper">
+          <label for="task-create-form__title">Task title</label>
+          <input type="text" class="task-create-form__input" id="task-create-form__title">
+        </div>
+        <div class="task-create-form__input-wrapper">
+          <label for="task-create-form__body">Task description</label>
+          <textarea class="task-create-form__input" id="task-create-form__body"></textarea>
+        </div>
+        <input type="submit" class="submit-button" disabled id="task-create-form__submit" value="Create task">
+      </form>
+      <div class="controls-tooltip">
+        <p>Double-click task title to mark as completed</p>
+        <p>Double-click task body to edit it</p>
+      </div>
+      <ul class="tasks">
+      </ul>
+    </main>
+  </div>
 </body>
 
 </html>

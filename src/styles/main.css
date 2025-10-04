@@ -1,3 +1,126 @@
-body {
-  background-color: #1e1e2e;
+@import "@catppuccin/palette/css/catppuccin";
+@import "./variables.css";
+@import "./reset.css";
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--ctp-mantle);
+}
+
+.content {
+  max-width: 75%;
+  padding: 2rem;
+  background-color: var(--ctp-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.task-create-form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-create-form__input-wrapper {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#task-create-form__submit {
+  margin-top: 1rem;
+  width: 50%;
+  border-color: var(--ctp-overlay0);
+}
+
+.submit-button:disabled:hover {
+  cursor: not-allowed;
+}
+
+.submit-button:not(:disabled):hover {
+  border-color: var(--ctp-accent);
+  background-color: var(--ctp-surface1);
+  cursor: pointer;
+}
+
+
+.controls-tooltip {
+  padding-top: 1rem;
+}
+
+.controls-tooltip>p {
+  margin: 0;
+}
+
+.tasks {
+  margin-top: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  background-color: var(--ctp-surface0);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.task__title,
+.task__body {
+  all: unset;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.task__title:disabled {
+  cursor: default;
+}
+
+
+.task.done {
+
+  .task__title,
+  .task__body {
+    text-decoration: line-through;
+    cursor: default;
+  }
+}
+
+.task__title {
+  text-align: center;
+}
+
+.task__edit-form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task__edit-form__controls {
+  display: flex;
+  gap: 1rem;
+}
+
+#task__edit-form__controls__cancel:hover {
+  cursor: pointer;
+  background-color: var(--ctp-surface1);
+  border-color: var(--ctp-red);
+}
+
+#task_template {
+  display: none;
 }

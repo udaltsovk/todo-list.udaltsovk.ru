@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Atkinson", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: var(--ctp-base);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--ctp-text);
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+main {
+  width: 75%;
+  max-width: calc(100% - 2rem);
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+label {
+  color: var(--ctp-text);
+}
+
+input,
+textarea {
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-text);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  border-color: var(--ctp-overlay0);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--ctp-accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0 0;
+  color: var(--ctp-text);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  color: var(--ctp-accent);
+}
+
+body.hasHover a:hover {
+  color: var(--ctp-accent);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  resize: none;
+}
+
+input {
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+code {
+  padding: 0.125rem 0.25rem;
+  background-color: var(--ctp-surface0);
+  border-radius: 0.125rem;
+}
+
+pre {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+pre>code {
+  all: unset;
+}
+
+blockquote {
+  border-left: 0.25rem solid var(--ctp-accent);
+  padding: 0 0 0 1.25rem;
+  margin: 0;
+  font-size: 1.333rem;
+}
+
+hr {
+  border: none;
+  border-top: 0.0625rem solid var(--ctp-surface0);
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 0.0625rem;
+  width: 0.0625rem;
+  overflow: hidden;
+  clip: rect(0.0625rem 0.0625rem 0.0625rem 0.0625rem);
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+::selection {
+  color: var(--ctp-crust);
+  background-color: var(--ctp-accent);
+}
+
+::-moz-selection {
+  color: var(--ctp-crust);
+  background-color: var(--ctp-accent);
+}
