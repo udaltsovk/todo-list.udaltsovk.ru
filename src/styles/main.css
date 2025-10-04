@@ -65,6 +65,7 @@
 }
 
 .task {
+  margin-top: 2rem;
   background-color: var(--ctp-surface0);
   border-radius: 1rem;
   padding: 1rem;
