@@ -7,12 +7,19 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@catppuccin/palette':
+        specifier: ^1.7.1
+        version: 1.7.1
     devDependencies:
       vite:
         specifier: ^7.1.9
         version: 7.1.9
 
 packages:
+
+  '@catppuccin/palette@1.7.1':
+    resolution: {integrity: sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==}
 
   '@esbuild/aix-ppc64@0.25.10':
     resolution: {integrity: sha512-0NFWnA+7l41irNuaSVlLfgNT12caWJVLzp5eAVhZ0z1qpxbockccEt3s+149rE64VUI3Ml2zt8Nv5JVc4QXTsw==}
@@ -372,6 +379,8 @@ packages:
         optional: true
 
 snapshots:
+
+  '@catppuccin/palette@1.7.1': {}
 
   '@esbuild/aix-ppc64@0.25.10':
     optional: true
