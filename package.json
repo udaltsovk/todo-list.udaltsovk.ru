@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^7.1.9"
+    "vite": "npm:rolldown-vite@latest"
   },
   "dependencies": {
     "@catppuccin/palette": "^1.7.1"
